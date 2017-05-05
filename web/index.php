@@ -42,8 +42,10 @@ $app->get('/getBeachList', function() use($app, $data) {
       $st->execute();
 
       $names = array();
+      
       while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
-        array_push($names,$row['id'],$row['name']);
+          $row_array = array('id' => $row['id'],'name' => $row['name']);
+        array_push($names,$row_array);
       }
     return json_encode($names);
 });
