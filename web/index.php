@@ -38,6 +38,7 @@ $app->get('/', function() use($app) {
 });
 
 $app->get('/getBeachList', function() use($app, $data) {
+       header("Access-Control-Allow-Origin: *");
       $st = $app['pdo']->prepare('SELECT * FROM beach_list');
       $st->execute();
 
