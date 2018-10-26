@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a8aee6167264ab70abc709c46be8809d",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/csanquer/PdoServiceProvider.git",
-                "reference": "da1cf8f457a3b6e8a9f64073466a2ce429201263"
+                "reference": "2b07fd86e145916a47723ca08452ada4dc675d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csanquer/PdoServiceProvider/zipball/da1cf8f457a3b6e8a9f64073466a2ce429201263",
-                "reference": "da1cf8f457a3b6e8a9f64073466a2ce429201263",
+                "url": "https://api.github.com/repos/csanquer/PdoServiceProvider/zipball/2b07fd86e145916a47723ca08452ada4dc675d58",
+                "reference": "2b07fd86e145916a47723ca08452ada4dc675d58",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
             ],
             "authors": [
                 {
-                    "name": "Charles SANQUER",
+                    "name": "Charles Sanquer",
                     "email": "charles.sanquer@gmail.com"
                 }
             ],
@@ -55,7 +55,7 @@
                 "service provider",
                 "silex"
             ],
-            "time": "2015-10-06 13:54:16"
+            "time": "2018-01-03T09:49:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -312,6 +312,7 @@
             "keywords": [
                 "microframework"
             ],
+            "abandoned": "symfony/flex",
             "time": "2017-05-03T15:21:42+00:00"
         },
         {
@@ -902,16 +903,16 @@
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v121",
+            "version": "v145",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db"
+                "reference": "5605a37df6eeed5c7f8417086602f496c22bec6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/727aa850a02a7af94c9225237464be8e8c8ff6db",
-                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5605a37df6eeed5c7f8417086602f496c22bec6d",
+                "reference": "5605a37df6eeed5c7f8417086602f496c22bec6d",
                 "shasum": ""
             },
             "bin": [
@@ -942,7 +943,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2017-03-27T23:33:27+00:00"
+            "time": "2018-10-16T16:33:47+00:00"
         }
     ],
     "aliases": [],
