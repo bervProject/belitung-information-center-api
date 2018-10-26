@@ -862,16 +862,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v3.2.8",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "c68a30eb1dc6a598b1b35abe82f4389087280e3a"
+                "reference": "045da985adacb3864224e2a0bd90d1920e58b086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/c68a30eb1dc6a598b1b35abe82f4389087280e3a",
-                "reference": "c68a30eb1dc6a598b1b35abe82f4389087280e3a",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/045da985adacb3864224e2a0bd90d1920e58b086",
+                "reference": "045da985adacb3864224e2a0bd90d1920e58b086",
                 "shasum": ""
             },
             "require": {
@@ -879,6 +879,7 @@
                 "twig/twig": "~1.28|~2.0"
             },
             "require-dev": {
+                "fig/link-util": "^1.0",
                 "symfony/asset": "~2.8|~3.0",
                 "symfony/console": "~2.8|~3.0",
                 "symfony/expression-language": "~2.8|~3.0",
@@ -893,6 +894,7 @@
                 "symfony/templating": "~2.8|~3.0",
                 "symfony/translation": "~2.8|~3.0",
                 "symfony/var-dumper": "~2.8.10|~3.1.4|~3.2",
+                "symfony/web-link": "~3.3",
                 "symfony/yaml": "~2.8|~3.0"
             },
             "suggest": {
@@ -907,12 +909,13 @@
                 "symfony/templating": "For using the TwigEngine",
                 "symfony/translation": "For using the TranslationExtension",
                 "symfony/var-dumper": "For using the DumpExtension",
+                "symfony/web-link": "For using the WebLinkExtension",
                 "symfony/yaml": "For using the YamlExtension"
             },
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -939,7 +942,7 @@
             ],
             "description": "Symfony Twig Bridge",
             "homepage": "https://symfony.com",
-            "time": "2017-04-12T15:22:35+00:00"
+            "time": "2017-05-22T07:32:45+00:00"
         },
         {
             "name": "twig/twig",
