@@ -78,7 +78,11 @@
                     @endauth
                 </div>
             @endif
-
+            @foreach ($errors as $error)
+            <div class="alert alert-danger" role="alert">
+                {{$error}}
+            </div>
+            @endforeach
             <div class="content">
                 <div class="title m-b-md">
                     Laravel

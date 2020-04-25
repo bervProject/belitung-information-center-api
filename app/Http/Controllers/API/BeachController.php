@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Beach;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class BeachController extends Controller
@@ -18,16 +19,6 @@ class BeachController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -35,7 +26,13 @@ class BeachController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,
+        [
+            'name' => ['required'],
+            'address' => ['required'],
+            'description' => ['required']
+        ]);
+        return Beach::create($request->all());
     }
 
     /**
@@ -46,18 +43,7 @@ class BeachController extends Controller
      */
     public function show(Beach $beach)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Beach  $beach
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Beach $beach)
-    {
-        //
+        return Beach::findOrFail($beach->id);
     }
 
     /**
@@ -69,7 +55,15 @@ class BeachController extends Controller
      */
     public function update(Request $request, Beach $beach)
     {
-        //
+        $foundBeach = Beach::findOrFail($beach->id);
+        $this->validate($request,
+        [
+            'name' => ['required'],
+            'address' => ['required'],
+            'description' => ['required']
+        ]);
+        $foundBeach->update($request->all());
+        return $foundBeach;
     }
 
     /**
