@@ -13,7 +13,7 @@ class CreateBeachTable extends Migration
      */
     public function up()
     {
-        Schema::create('beach', function (Blueprint $table) {
+        Schema::create('beaches', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('address');
