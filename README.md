@@ -4,9 +4,11 @@ This project using Laravel Framework.
 
 ## Build Status
 
-| Travis |
-|:------:|
-| [![Build Status](https://travis-ci.com/bervProject/belitung-information-center-api.svg?branch=master)](https://travis-ci.com/bervProject/belitung-information-center-api) |
+| Travis | Codecov |
+|:------:|:-------:|
+| [![Build Status](https://travis-ci.com/bervProject/belitung-information-center-api.svg?branch=master)](https://travis-ci.com/bervProject/belitung-information-center-api) | [![codecov](https://codecov.io/gh/bervProject/belitung-information-center-api/branch/master/graph/badge.svg)](https://codecov.io/gh/bervProject/belitung-information-center-api) |
+
+
 
 
 ## LICENSE
