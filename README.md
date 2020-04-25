@@ -1,8 +1,13 @@
 # Belitung Information Center API
 
-[![Build Status](https://travis-ci.org/bervProject/belitung-information-center-api.svg?branch=master)](https://travis-ci.org/bervProject/belitung-information-center-api)
-
 This project using Laravel Framework.
+
+## Build Status
+
+| Travis |
+|:------:|
+| [![Build Status](https://travis-ci.com/bervProject/belitung-information-center-api.svg?branch=master)](https://travis-ci.com/bervProject/belitung-information-center-api) |
+
 
 ## LICENSE
 
