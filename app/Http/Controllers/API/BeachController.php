@@ -11,11 +11,11 @@ class BeachController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Beach[]|\Illuminate\Database\Eloquent\Collection
      */
     public function index()
     {
-        return Beach::all();
+        return Beach::paginate(25);
     }
 
     /**
