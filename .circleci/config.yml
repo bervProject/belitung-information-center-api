@@ -36,6 +36,6 @@ jobs: # a collection of steps
       - run: yarn production
       - run: cp .env.example .env
       - run: php artisan key:generate
-      - run: ./vendor/bin/phpunit --coverage-clover coverage.xml
+      - run: ./vendor/bin/phpunit
       - run: bash <(curl -s https://codecov.io/bash)
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
