@@ -23,6 +23,6 @@
         "sass-loader": "^11.0.1",
         "vue": "^2.7.14",
         "vue-loader": "15.9.5",
-        "vue-template-compiler": "^2.7.14"
+        "vue-template-compiler": "^2.7.16"
     }
 }
