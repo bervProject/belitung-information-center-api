@@ -36,7 +36,7 @@ jobs: # a collection of steps
       - run: yarn production
       - run: cp .env.example .env
       - run: php artisan key:generate
-      - run: XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-clover coverage.xml
+      - run: ./vendor/bin/phpunit
       - run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
           chmod +x codecov
