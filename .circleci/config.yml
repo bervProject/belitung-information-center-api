@@ -40,7 +40,7 @@ jobs: # a collection of steps
       - run: yarn production
       - run: cp .env.example .env
       - run: php artisan key:generate
-      - run: php artisan test --coverage
+      - run: XDEBUG_MODE=coverage php artisan test --coverage
       - run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
           chmod +x codecov
