@@ -12,9 +12,9 @@ jobs: # a collection of steps
       - checkout # special step to check out source code to working directory
       - run: sudo apt install -y libsqlite3-dev zlib1g-dev
       - run: |
-          pecl channel-update pecl.php.net && \
-          pecl install xdebug-3.4.0 && \
-          docker-php-ext-enable xdebug
+          sudo pecl channel-update pecl.php.net && \
+          sudo pecl install xdebug-3.4.0 && \
+          sudo docker-php-ext-enable xdebug
       - run: sudo docker-php-ext-install zip
       - run: sudo composer self-update
       - restore_cache: # special step to restore the dependency cache if `composer.lock` does not change
